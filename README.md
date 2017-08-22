@@ -10,7 +10,7 @@ Runtime in your Ember app, but only if you didn't already set
 `babel.includePolyfill` to true. This is useful for:
 
 1. Apps that want to use ES6 generator functions but don't want to
-   import the large Babel polyfill
+   import the large Babel polyfill which would add ~30kb gzipped. This package adds ~2kb gzipped (maybe).
 2. Addons that depend on generator functions (or other addons
    that depend on generator functions) but don't want to
    force users to have to add `babel.includePolyfill: true` to
